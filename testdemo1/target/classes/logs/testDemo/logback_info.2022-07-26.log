@@ -1,0 +1,218 @@
+2022-07-26 10:45:03.221 lykDemo service [main] INFO  DemoApplication 55 - Starting DemoApplication on macdeMacBook-Pro.local with PID 29963 (/Applications/software/WorkSpace/testdemo1/target/classes started by mac in /Applications/software/WorkSpace/testdemo1)
+2022-07-26 10:45:03.223 lykDemo service [main] INFO  DemoApplication 655 - The following profiles are active: lyk-local
+2022-07-26 10:45:10.077 lykDemo service [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 91 - Tomcat initialized with port(s): 1001 (http)
+2022-07-26 10:45:10.094 lykDemo service [main] INFO  org.apache.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-1001"]
+2022-07-26 10:45:10.096 lykDemo service [main] INFO  org.apache.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-07-26 10:45:10.096 lykDemo service [main] INFO  org.apache.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.34]
+2022-07-26 10:45:10.188 lykDemo service [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-07-26 10:45:10.189 lykDemo service [main] INFO  org.springframework.web.context.ContextLoader 284 - Root WebApplicationContext: initialization completed in 6834 ms
+2022-07-26 10:45:10.370 lykDemo service [main] INFO  org.springframework.boot.web.servlet.RegistrationBean 110 - Filter logFilter was not registered (possibly already registered?)
+2022-07-26 10:45:10.370 lykDemo service [main] INFO  org.springframework.boot.web.servlet.RegistrationBean 110 - Filter logMDCOncePerRequestFilter was not registered (possibly already registered?)
+2022-07-26 10:45:32.033 lykDemo service [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-26 10:45:32.811 lykDemo service [main] INFO  org.apache.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-1001"]
+2022-07-26 10:45:32.850 lykDemo service [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 203 - Tomcat started on port(s): 1001 (http) with context path ''
+2022-07-26 10:45:32.854 lykDemo service [main] INFO  DemoApplication 61 - Started DemoApplication in 50.54 seconds (JVM running for 51.1)
+2022-07-26 10:49:18.913 lykDemo service [http-nio-1001-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-26 10:49:18.916 lykDemo service [http-nio-1001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-07-26 10:49:18.960 lykDemo service [http-nio-1001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet 547 - Completed initialization in 43 ms
+2022-07-26 10:49:18.975 lykDemo service [http-nio-1001-exec-1] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 28 - 进过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 10:49:18.979 lykDemo service [http-nio-1001-exec-1] INFO  com.lyk.demo.filter.LogMDCFilter 22 - 进过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 10:49:19.434 lykDemo service [http-nio-1001-exec-1] INFO  com.lyk.demo.controller.TestController 54 - 测试根据条件查询请求参数:{"classes":"","gender":"F"}
+2022-07-26 10:49:19.559 lykDemo service [http-nio-1001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2022-07-26 10:49:20.253 lykDemo service [http-nio-1001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2022-07-26 10:49:20.472 lykDemo service [http-nio-1001-exec-1] INFO  com.lyk.demo.controller.TestController 56 - 测试根据条件查询响应参数：[{"age":20,"classes":"九年1班","gender":"F","name":"张三"}]
+2022-07-26 10:49:20.645 lykDemo service [http-nio-1001-exec-1] INFO  com.lyk.demo.filter.LogMDCFilter 26 - 出过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 10:49:20.646 lykDemo service [http-nio-1001-exec-1] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 32 - 出过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 10:49:37.270 lykDemo service [SpringContextShutdownHook] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor 218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-26 10:49:37.276 lykDemo service [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 350 - HikariPool-1 - Shutdown initiated...
+2022-07-26 10:49:37.301 lykDemo service [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 352 - HikariPool-1 - Shutdown completed.
+2022-07-26 10:50:00.292 lykDemo service [main] INFO  DemoApplication 55 - Starting DemoApplication on macdeMacBook-Pro.local with PID 29974 (/Applications/software/WorkSpace/testdemo1/target/classes started by mac in /Applications/software/WorkSpace/testdemo1)
+2022-07-26 10:50:00.294 lykDemo service [main] INFO  DemoApplication 655 - The following profiles are active: lyk-local
+2022-07-26 10:50:07.134 lykDemo service [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 91 - Tomcat initialized with port(s): 1001 (http)
+2022-07-26 10:50:07.146 lykDemo service [main] INFO  org.apache.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-1001"]
+2022-07-26 10:50:07.148 lykDemo service [main] INFO  org.apache.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-07-26 10:50:07.148 lykDemo service [main] INFO  org.apache.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.34]
+2022-07-26 10:50:07.238 lykDemo service [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-07-26 10:50:07.238 lykDemo service [main] INFO  org.springframework.web.context.ContextLoader 284 - Root WebApplicationContext: initialization completed in 6812 ms
+2022-07-26 10:50:07.411 lykDemo service [main] INFO  org.springframework.boot.web.servlet.RegistrationBean 110 - Filter logFilter was not registered (possibly already registered?)
+2022-07-26 10:50:07.411 lykDemo service [main] INFO  org.springframework.boot.web.servlet.RegistrationBean 110 - Filter logMDCOncePerRequestFilter was not registered (possibly already registered?)
+2022-07-26 10:50:29.125 lykDemo service [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-26 10:50:30.061 lykDemo service [main] INFO  org.apache.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-1001"]
+2022-07-26 10:50:30.103 lykDemo service [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 203 - Tomcat started on port(s): 1001 (http) with context path ''
+2022-07-26 10:50:30.108 lykDemo service [main] INFO  DemoApplication 61 - Started DemoApplication in 50.623 seconds (JVM running for 51.18)
+2022-07-26 10:50:34.345 lykDemo service [http-nio-1001-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-26 10:50:34.348 lykDemo service [http-nio-1001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-07-26 10:50:34.387 lykDemo service [http-nio-1001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet 547 - Completed initialization in 38 ms
+2022-07-26 10:50:34.400 lykDemo service [http-nio-1001-exec-1] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 28 - 进过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 10:50:34.403 lykDemo service [http-nio-1001-exec-1] INFO  com.lyk.demo.filter.LogMDCFilter 22 - 进过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 10:50:34.783 lykDemo service [http-nio-1001-exec-1] INFO  com.lyk.demo.controller.TestController 54 - 测试根据条件查询请求参数:{"classes":"","gender":"F"}
+2022-07-26 10:50:34.910 lykDemo service [http-nio-1001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2022-07-26 10:50:35.562 lykDemo service [http-nio-1001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2022-07-26 10:50:35.687 lykDemo service [http-nio-1001-exec-1] INFO  com.lyk.demo.controller.TestController 56 - 测试根据条件查询响应参数：[{"age":20,"classes":"九年1班","gender":"F","name":"张三"}]
+2022-07-26 10:50:35.810 lykDemo service [http-nio-1001-exec-1] INFO  com.lyk.demo.filter.LogMDCFilter 26 - 出过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 10:50:35.811 lykDemo service [http-nio-1001-exec-1] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 32 - 出过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 10:51:09.924 lykDemo service [SpringContextShutdownHook] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor 218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-26 10:51:09.933 lykDemo service [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 350 - HikariPool-1 - Shutdown initiated...
+2022-07-26 10:51:09.957 lykDemo service [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 352 - HikariPool-1 - Shutdown completed.
+2022-07-26 10:51:33.083 lykDemo service [main] INFO  DemoApplication 55 - Starting DemoApplication on macdeMacBook-Pro.local with PID 29985 (/Applications/software/WorkSpace/testdemo1/target/classes started by mac in /Applications/software/WorkSpace/testdemo1)
+2022-07-26 10:51:33.085 lykDemo service [main] INFO  DemoApplication 655 - The following profiles are active: lyk-local
+2022-07-26 10:51:40.078 lykDemo service [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 91 - Tomcat initialized with port(s): 1001 (http)
+2022-07-26 10:51:40.091 lykDemo service [main] INFO  org.apache.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-1001"]
+2022-07-26 10:51:40.093 lykDemo service [main] INFO  org.apache.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-07-26 10:51:40.093 lykDemo service [main] INFO  org.apache.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.34]
+2022-07-26 10:51:40.190 lykDemo service [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-07-26 10:51:40.190 lykDemo service [main] INFO  org.springframework.web.context.ContextLoader 284 - Root WebApplicationContext: initialization completed in 6969 ms
+2022-07-26 10:51:40.374 lykDemo service [main] INFO  org.springframework.boot.web.servlet.RegistrationBean 110 - Filter logFilter was not registered (possibly already registered?)
+2022-07-26 10:51:40.375 lykDemo service [main] INFO  org.springframework.boot.web.servlet.RegistrationBean 110 - Filter logMDCOncePerRequestFilter was not registered (possibly already registered?)
+2022-07-26 10:52:02.014 lykDemo service [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-26 10:52:02.814 lykDemo service [main] INFO  org.apache.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-1001"]
+2022-07-26 10:52:02.849 lykDemo service [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 203 - Tomcat started on port(s): 1001 (http) with context path ''
+2022-07-26 10:52:02.857 lykDemo service [main] INFO  DemoApplication 61 - Started DemoApplication in 50.594 seconds (JVM running for 51.159)
+2022-07-26 11:01:40.150 lykDemo service [http-nio-1001-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-26 11:01:40.153 lykDemo service [http-nio-1001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-07-26 11:01:40.207 lykDemo service [http-nio-1001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet 547 - Completed initialization in 53 ms
+2022-07-26 11:01:40.222 lykDemo service [http-nio-1001-exec-1] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 28 - 进过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 11:01:40.226 lykDemo service [http-nio-1001-exec-1] INFO  com.lyk.demo.filter.LogMDCFilter 22 - 进过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 11:01:40.721 lykDemo service [http-nio-1001-exec-1] INFO  com.lyk.demo.controller.TestController 54 - 测试根据条件查询请求参数:{"classes":"","gender":"F"}
+2022-07-26 11:01:40.837 lykDemo service [http-nio-1001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2022-07-26 11:01:41.598 lykDemo service [http-nio-1001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2022-07-26 11:01:41.754 lykDemo service [http-nio-1001-exec-1] INFO  com.lyk.demo.controller.TestController 56 - 测试根据条件查询响应参数：[{"age":20,"classes":"九年1班","gender":"F","name":"张三"}]
+2022-07-26 11:01:41.904 lykDemo service [http-nio-1001-exec-1] INFO  com.lyk.demo.filter.LogMDCFilter 26 - 出过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 11:01:41.905 lykDemo service [http-nio-1001-exec-1] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 32 - 出过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 11:07:07.976 lykDemo service [SpringContextShutdownHook] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor 218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-26 11:07:07.982 lykDemo service [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 350 - HikariPool-1 - Shutdown initiated...
+2022-07-26 11:07:08.004 lykDemo service [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 352 - HikariPool-1 - Shutdown completed.
+2022-07-26 11:07:31.315 lykDemo service [main] [] INFO  DemoApplication 55 - Starting DemoApplication on macdeMacBook-Pro.local with PID 30020 (/Applications/software/WorkSpace/testdemo1/target/classes started by mac in /Applications/software/WorkSpace/testdemo1)
+2022-07-26 11:07:31.318 lykDemo service [main] [] INFO  DemoApplication 655 - The following profiles are active: lyk-local
+2022-07-26 11:07:38.220 lykDemo service [main] [] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 91 - Tomcat initialized with port(s): 1001 (http)
+2022-07-26 11:07:38.232 lykDemo service [main] [] INFO  org.apache.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-1001"]
+2022-07-26 11:07:38.234 lykDemo service [main] [] INFO  org.apache.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-07-26 11:07:38.234 lykDemo service [main] [] INFO  org.apache.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.34]
+2022-07-26 11:07:38.323 lykDemo service [main] [] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-07-26 11:07:38.324 lykDemo service [main] [] INFO  org.springframework.web.context.ContextLoader 284 - Root WebApplicationContext: initialization completed in 6866 ms
+2022-07-26 11:07:38.491 lykDemo service [main] [] INFO  org.springframework.boot.web.servlet.RegistrationBean 110 - Filter logFilter was not registered (possibly already registered?)
+2022-07-26 11:07:38.492 lykDemo service [main] [] INFO  org.springframework.boot.web.servlet.RegistrationBean 110 - Filter logMDCOncePerRequestFilter was not registered (possibly already registered?)
+2022-07-26 11:08:00.263 lykDemo service [main] [] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-26 11:08:01.086 lykDemo service [main] [] INFO  org.apache.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-1001"]
+2022-07-26 11:08:01.121 lykDemo service [main] [] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 203 - Tomcat started on port(s): 1001 (http) with context path ''
+2022-07-26 11:08:01.128 lykDemo service [main] [] INFO  DemoApplication 61 - Started DemoApplication in 50.659 seconds (JVM running for 51.213)
+2022-07-26 11:08:03.509 lykDemo service [http-nio-1001-exec-1] [] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-26 11:08:03.511 lykDemo service [http-nio-1001-exec-1] [] INFO  org.springframework.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-07-26 11:08:03.552 lykDemo service [http-nio-1001-exec-1] [] INFO  org.springframework.web.servlet.DispatcherServlet 547 - Completed initialization in 41 ms
+2022-07-26 11:08:03.567 lykDemo service [http-nio-1001-exec-1] [ef61786a0898] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 28 - 进过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 11:08:03.570 lykDemo service [http-nio-1001-exec-1] [932c923ffe5e] INFO  com.lyk.demo.filter.LogMDCFilter 22 - 进过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 11:08:03.937 lykDemo service [http-nio-1001-exec-1] [932c923ffe5e] INFO  com.lyk.demo.controller.TestController 54 - 测试根据条件查询请求参数:{"classes":"","gender":"F"}
+2022-07-26 11:08:04.057 lykDemo service [http-nio-1001-exec-1] [932c923ffe5e] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2022-07-26 11:08:04.693 lykDemo service [http-nio-1001-exec-1] [932c923ffe5e] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2022-07-26 11:08:04.844 lykDemo service [http-nio-1001-exec-1] [932c923ffe5e] INFO  com.lyk.demo.controller.TestController 56 - 测试根据条件查询响应参数：[{"age":20,"classes":"九年1班","gender":"F","name":"张三"}]
+2022-07-26 11:08:04.970 lykDemo service [http-nio-1001-exec-1] [] INFO  com.lyk.demo.filter.LogMDCFilter 26 - 出过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 11:08:04.971 lykDemo service [http-nio-1001-exec-1] [] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 32 - 出过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 11:11:31.560 lykDemo service [SpringContextShutdownHook] [] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor 218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-26 11:11:31.571 lykDemo service [SpringContextShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource 350 - HikariPool-1 - Shutdown initiated...
+2022-07-26 11:11:31.602 lykDemo service [SpringContextShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource 352 - HikariPool-1 - Shutdown completed.
+2022-07-26 11:11:56.525 lykDemo service [main] [] INFO  DemoApplication 55 - Starting DemoApplication on macdeMacBook-Pro.local with PID 30035 (/Applications/software/WorkSpace/testdemo1/target/classes started by mac in /Applications/software/WorkSpace/testdemo1)
+2022-07-26 11:11:56.528 lykDemo service [main] [] INFO  DemoApplication 655 - The following profiles are active: lyk-local
+2022-07-26 11:12:03.375 lykDemo service [main] [] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 91 - Tomcat initialized with port(s): 1001 (http)
+2022-07-26 11:12:03.391 lykDemo service [main] [] INFO  org.apache.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-1001"]
+2022-07-26 11:12:03.393 lykDemo service [main] [] INFO  org.apache.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-07-26 11:12:03.393 lykDemo service [main] [] INFO  org.apache.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.34]
+2022-07-26 11:12:03.485 lykDemo service [main] [] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-07-26 11:12:03.485 lykDemo service [main] [] INFO  org.springframework.web.context.ContextLoader 284 - Root WebApplicationContext: initialization completed in 6817 ms
+2022-07-26 11:12:03.657 lykDemo service [main] [] INFO  org.springframework.boot.web.servlet.RegistrationBean 110 - Filter logFilter was not registered (possibly already registered?)
+2022-07-26 11:12:03.657 lykDemo service [main] [] INFO  org.springframework.boot.web.servlet.RegistrationBean 110 - Filter logMDCOncePerRequestFilter was not registered (possibly already registered?)
+2022-07-26 11:12:25.431 lykDemo service [main] [] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-26 11:12:26.251 lykDemo service [main] [] INFO  org.apache.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-1001"]
+2022-07-26 11:12:26.285 lykDemo service [main] [] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 203 - Tomcat started on port(s): 1001 (http) with context path ''
+2022-07-26 11:12:26.290 lykDemo service [main] [] INFO  DemoApplication 61 - Started DemoApplication in 50.583 seconds (JVM running for 51.129)
+2022-07-26 11:12:47.907 lykDemo service [http-nio-1001-exec-1] [] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-26 11:12:47.910 lykDemo service [http-nio-1001-exec-1] [] INFO  org.springframework.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2022-07-26 11:12:47.948 lykDemo service [http-nio-1001-exec-1] [] INFO  org.springframework.web.servlet.DispatcherServlet 547 - Completed initialization in 38 ms
+2022-07-26 11:12:47.963 lykDemo service [http-nio-1001-exec-1] [1538cf3ef1fb] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 28 - 进过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 11:12:47.966 lykDemo service [http-nio-1001-exec-1] [2ac53d51e801] INFO  com.lyk.demo.filter.LogMDCFilter 22 - 进过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 11:12:48.357 lykDemo service [http-nio-1001-exec-1] [2ac53d51e801] INFO  com.lyk.demo.controller.TestController 54 - 测试根据条件查询请求参数:{"classes":"","gender":"F"}
+2022-07-26 11:12:48.477 lykDemo service [http-nio-1001-exec-1] [2ac53d51e801] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2022-07-26 11:12:49.261 lykDemo service [http-nio-1001-exec-1] [2ac53d51e801] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2022-07-26 11:12:49.398 lykDemo service [http-nio-1001-exec-1] [2ac53d51e801] INFO  com.lyk.demo.controller.TestController 56 - 测试根据条件查询响应参数：[{"age":20,"classes":"九年1班","gender":"F","name":"张三"}]
+2022-07-26 11:12:49.523 lykDemo service [http-nio-1001-exec-1] [2ac53d51e801] INFO  com.lyk.demo.filter.LogMDCFilter 25 - 出过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 11:12:49.524 lykDemo service [http-nio-1001-exec-1] [] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 31 - 出过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 13:46:27.268 lykDemo service [http-nio-1001-exec-3] [bc4d11ce7482] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 28 - 进过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 13:46:27.270 lykDemo service [http-nio-1001-exec-3] [4fecbeedb3eb] INFO  com.lyk.demo.filter.LogMDCFilter 22 - 进过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 13:46:27.310 lykDemo service [http-nio-1001-exec-3] [4fecbeedb3eb] INFO  com.lyk.demo.filter.LogMDCFilter 25 - 出过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 13:46:27.312 lykDemo service [http-nio-1001-exec-3] [] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 31 - 出过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 13:46:27.322 lykDemo service [http-nio-1001-exec-4] [ae6de6e30d82] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 28 - 进过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 13:46:27.323 lykDemo service [http-nio-1001-exec-4] [832760e98221] INFO  com.lyk.demo.filter.LogMDCFilter 22 - 进过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 13:46:27.323 lykDemo service [http-nio-1001-exec-4] [832760e98221] INFO  com.lyk.demo.filter.LogMDCFilter 25 - 出过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 13:46:27.323 lykDemo service [http-nio-1001-exec-4] [] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 31 - 出过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 13:46:28.517 lykDemo service [http-nio-1001-exec-5] [554935176ff0] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 28 - 进过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 13:46:28.526 lykDemo service [http-nio-1001-exec-5] [fbc289b87b17] INFO  com.lyk.demo.filter.LogMDCFilter 22 - 进过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 13:46:28.566 lykDemo service [http-nio-1001-exec-5] [fbc289b87b17] INFO  com.lyk.demo.filter.LogMDCFilter 25 - 出过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 13:46:28.569 lykDemo service [http-nio-1001-exec-5] [] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 31 - 出过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 13:46:28.708 lykDemo service [http-nio-1001-exec-6] [480008684ac2] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 28 - 进过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 13:46:28.713 lykDemo service [http-nio-1001-exec-6] [edad63c660a5] INFO  com.lyk.demo.filter.LogMDCFilter 22 - 进过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 13:46:28.724 lykDemo service [http-nio-1001-exec-6] [edad63c660a5] INFO  com.lyk.demo.filter.LogMDCFilter 25 - 出过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 13:46:28.727 lykDemo service [http-nio-1001-exec-6] [] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 31 - 出过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 13:46:57.876 lykDemo service [http-nio-1001-exec-7] [a4f5a2d7302f] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 28 - 进过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 13:46:57.878 lykDemo service [http-nio-1001-exec-7] [5731dd7abf36] INFO  com.lyk.demo.filter.LogMDCFilter 22 - 进过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 13:46:57.888 lykDemo service [http-nio-1001-exec-7] [5731dd7abf36] INFO  com.lyk.demo.filter.LogMDCFilter 25 - 出过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 13:46:57.889 lykDemo service [http-nio-1001-exec-7] [] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 31 - 出过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 13:46:57.937 lykDemo service [http-nio-1001-exec-8] [515a7f273c06] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 28 - 进过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 13:46:57.939 lykDemo service [http-nio-1001-exec-8] [08ab3d93fc52] INFO  com.lyk.demo.filter.LogMDCFilter 22 - 进过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 13:46:57.945 lykDemo service [http-nio-1001-exec-8] [08ab3d93fc52] INFO  com.lyk.demo.filter.LogMDCFilter 25 - 出过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 13:46:57.947 lykDemo service [http-nio-1001-exec-8] [] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 31 - 出过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 13:47:01.628 lykDemo service [http-nio-1001-exec-9] [f12b966a16b4] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 28 - 进过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 13:47:01.631 lykDemo service [http-nio-1001-exec-10] [d26a3db25dbd] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 28 - 进过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 13:47:01.633 lykDemo service [http-nio-1001-exec-9] [73951b90122f] INFO  com.lyk.demo.filter.LogMDCFilter 22 - 进过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 13:47:01.634 lykDemo service [http-nio-1001-exec-10] [fc5bba2868a9] INFO  com.lyk.demo.filter.LogMDCFilter 22 - 进过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 13:47:01.670 lykDemo service [http-nio-1001-exec-9] [73951b90122f] INFO  com.lyk.demo.filter.LogMDCFilter 25 - 出过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 13:47:01.673 lykDemo service [http-nio-1001-exec-9] [] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 31 - 出过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 13:47:01.693 lykDemo service [http-nio-1001-exec-10] [fc5bba2868a9] INFO  com.lyk.demo.filter.LogMDCFilter 25 - 出过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 13:47:01.694 lykDemo service [http-nio-1001-exec-10] [] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 31 - 出过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 13:47:01.861 lykDemo service [http-nio-1001-exec-1] [0502e0c06ea8] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 28 - 进过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 13:47:01.862 lykDemo service [http-nio-1001-exec-1] [caae079a282d] INFO  com.lyk.demo.filter.LogMDCFilter 22 - 进过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 13:47:01.911 lykDemo service [http-nio-1001-exec-1] [caae079a282d] INFO  com.lyk.demo.filter.LogMDCFilter 25 - 出过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 13:47:01.912 lykDemo service [http-nio-1001-exec-1] [] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 31 - 出过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 13:47:01.918 lykDemo service [http-nio-1001-exec-2] [032d72e6e01d] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 28 - 进过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 13:47:01.918 lykDemo service [http-nio-1001-exec-2] [da79b8dd4f5e] INFO  com.lyk.demo.filter.LogMDCFilter 22 - 进过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 13:47:02.105 lykDemo service [http-nio-1001-exec-2] [da79b8dd4f5e] INFO  com.lyk.demo.filter.LogMDCFilter 25 - 出过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 13:47:02.107 lykDemo service [http-nio-1001-exec-2] [] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 31 - 出过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 13:47:02.173 lykDemo service [http-nio-1001-exec-3] [ce678f3e0a60] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 28 - 进过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 13:47:02.175 lykDemo service [http-nio-1001-exec-3] [066aa6fde21c] INFO  com.lyk.demo.filter.LogMDCFilter 22 - 进过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 13:47:02.192 lykDemo service [http-nio-1001-exec-3] [066aa6fde21c] INFO  com.lyk.demo.filter.LogMDCFilter 25 - 出过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 13:47:02.192 lykDemo service [http-nio-1001-exec-3] [] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 31 - 出过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 13:47:02.233 lykDemo service [http-nio-1001-exec-4] [01bddcb6127c] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 28 - 进过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 13:47:02.234 lykDemo service [http-nio-1001-exec-4] [fd250d07c842] INFO  com.lyk.demo.filter.LogMDCFilter 22 - 进过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 13:47:02.238 lykDemo service [http-nio-1001-exec-4] [fd250d07c842] INFO  com.lyk.demo.filter.LogMDCFilter 25 - 出过滤器====:com.lyk.demo.filter.LogMDCFilter
+2022-07-26 13:47:02.238 lykDemo service [http-nio-1001-exec-4] [] INFO  com.lyk.demo.filter.LogMDCOncePerRequestFilter 31 - 出过滤器====:com.lyk.demo.filter.LogMDCOncePerRequestFilter
+2022-07-26 14:19:54.548 lykDemo service [SpringContextShutdownHook] [] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor 218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-26 14:19:54.557 lykDemo service [SpringContextShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource 350 - HikariPool-1 - Shutdown initiated...
+2022-07-26 14:19:54.584 lykDemo service [SpringContextShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource 352 - HikariPool-1 - Shutdown completed.
+2022-07-26 14:20:19.694 lykDemo service [main] [] INFO  DemoApplication 55 - Starting DemoApplication on macdeMacBook-Pro.local with PID 30192 (/Applications/software/WorkSpace/testdemo1/target/classes started by mac in /Applications/software/WorkSpace/testdemo1)
+2022-07-26 14:20:19.698 lykDemo service [main] [] INFO  DemoApplication 655 - The following profiles are active: lyk-local
+2022-07-26 14:20:26.812 lykDemo service [main] [] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 91 - Tomcat initialized with port(s): 1001 (http)
+2022-07-26 14:20:26.824 lykDemo service [main] [] INFO  org.apache.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-1001"]
+2022-07-26 14:20:26.827 lykDemo service [main] [] INFO  org.apache.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-07-26 14:20:26.827 lykDemo service [main] [] INFO  org.apache.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.34]
+2022-07-26 14:20:26.920 lykDemo service [main] [] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-07-26 14:20:26.920 lykDemo service [main] [] INFO  org.springframework.web.context.ContextLoader 284 - Root WebApplicationContext: initialization completed in 7067 ms
+2022-07-26 14:20:27.078 lykDemo service [main] [] INFO  org.springframework.boot.web.servlet.RegistrationBean 110 - Filter logFilter was not registered (possibly already registered?)
+2022-07-26 14:20:27.079 lykDemo service [main] [] INFO  org.springframework.boot.web.servlet.RegistrationBean 110 - Filter logMDCOncePerRequestFilter was not registered (possibly already registered?)
+2022-07-26 14:20:48.848 lykDemo service [main] [] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-26 14:20:49.675 lykDemo service [main] [] INFO  org.apache.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-1001"]
+2022-07-26 14:20:49.710 lykDemo service [main] [] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 203 - Tomcat started on port(s): 1001 (http) with context path ''
+2022-07-26 14:20:49.717 lykDemo service [main] [] INFO  DemoApplication 61 - Started DemoApplication in 50.856 seconds (JVM running for 51.42)
+2022-07-26 14:34:09.694 lykDemo service [SpringContextShutdownHook] [] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor 218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-26 14:34:35.121 lykDemo service [main] [] INFO  DemoApplication 55 - Starting DemoApplication on macdeMacBook-Pro.local with PID 30226 (/Applications/software/WorkSpace/testdemo1/target/classes started by mac in /Applications/software/WorkSpace/testdemo1)
+2022-07-26 14:34:35.122 lykDemo service [main] [] INFO  DemoApplication 655 - The following profiles are active: lyk-local
+2022-07-26 14:34:42.169 lykDemo service [main] [] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 91 - Tomcat initialized with port(s): 1001 (http)
+2022-07-26 14:34:42.183 lykDemo service [main] [] INFO  org.apache.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-1001"]
+2022-07-26 14:34:42.185 lykDemo service [main] [] INFO  org.apache.catalina.core.StandardService 173 - Starting service [Tomcat]
+2022-07-26 14:34:42.185 lykDemo service [main] [] INFO  org.apache.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.34]
+2022-07-26 14:34:42.270 lykDemo service [main] [] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2022-07-26 14:34:42.270 lykDemo service [main] [] INFO  org.springframework.web.context.ContextLoader 284 - Root WebApplicationContext: initialization completed in 6910 ms
+2022-07-26 14:34:42.464 lykDemo service [main] [] INFO  org.springframework.boot.web.servlet.RegistrationBean 110 - Filter logFilter was not registered (possibly already registered?)
+2022-07-26 14:34:42.465 lykDemo service [main] [] INFO  org.springframework.boot.web.servlet.RegistrationBean 110 - Filter logMDCOncePerRequestFilter was not registered (possibly already registered?)
+2022-07-26 14:35:04.099 lykDemo service [main] [] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-26 14:35:04.886 lykDemo service [main] [] INFO  org.apache.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-1001"]
+2022-07-26 14:35:04.920 lykDemo service [main] [] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 203 - Tomcat started on port(s): 1001 (http) with context path ''
+2022-07-26 14:35:04.926 lykDemo service [main] [] INFO  DemoApplication 61 - Started DemoApplication in 50.687 seconds (JVM running for 51.294)
+2022-07-26 14:35:18.734 lykDemo service [SpringContextShutdownHook] [] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor 218 - Shutting down ExecutorService 'applicationTaskExecutor'
