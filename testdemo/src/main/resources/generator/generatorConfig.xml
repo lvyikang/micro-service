@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <!-- 数据库驱动:选择你的本地硬盘上面的数据库驱动包-->
+   <!-- <classPathEntry  location="C:\Users\cd.lvyk\Downloads\mysql-connector-java-8.0.13.jar"/>-->
+   <classPathEntry  location="/Applications/software/repository/mysql/mysql-connector-java/8.0.22/mysql-connector-java-8.0.22.jar"/>
+    <context id="DB2Tables"  targetRuntime="MyBatis3">
+        <commentGenerator>
+            <property name="suppressDate" value="true"/>
+            <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
+        <!--数据库链接URL，用户名、密码
+           1.一般jdbc数据库的版本6.x以上，都是com.mysql.cj.jdbc.Driver
+            其他的低版本就是com.mysql.cj.jdbc.Driver -->
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/lykdemo?useUnicode=true"
+                        userId="root" password="12345678">
+            <!--value="true"，支持生成主键相关增删改查语句-->
+            <property name="useInformationSchema" value="true"/>
+        </jdbcConnection>
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+        <!-- 生成模型的包名和位置-->
+        <javaModelGenerator targetPackage="com.lyk.demo.dataDo" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+        <!--&lt;!&ndash; 生成映射文件的包名和位置&ndash;&gt;
+        <sqlMapGenerator targetPackage="mapping" targetProject="src/main/resources">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+        &lt;!&ndash; 生成DAO的包名和位置&ndash;&gt;
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.cntaiping.tpp.tytb.domain.mapper"
+                             targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>-->
+        <!--<table tableName="tbl_insu_crs" domainObjectName="TblInsuCrsDO"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true"
+               enableSelectByPrimaryKey="true"
+               enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true">
+            <property name="useActualColumnNames" value="false"/>
+        </table>
+        <table tableName="tbl_insu_crs_tax" domainObjectName="TblInsuCrsTaxDO"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true"
+               enableSelectByPrimaryKey="true"
+               enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true">
+            <property name="useActualColumnNames" value="false"/>
+        </table>
+        <table tableName="tbl_insu_main" domainObjectName="TblInsuMainDO"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true"
+               enableSelectByPrimaryKey="true"
+               enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true">
+            <property name="useActualColumnNames" value="false"/>
+        </table>
+        <table tableName="tbl_insu_product" domainObjectName="TblInsuProductDO"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true"
+               enableSelectByPrimaryKey="true"
+               enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true">
+            <property name="useActualColumnNames" value="false"/>
+        </table>-->
+        <!--<table tableName="tbl_insu_health" domainObjectName="TblInsuHealthDO"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true"
+               enableSelectByPrimaryKey="true"
+               enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true">
+            <property name="useActualColumnNames" value="false"/>
+        </table>-->
+        <!--&lt;!&ndash;腾讯视频会议宣讲配置表&ndash;&gt;
+        <table tableName="tb_meet_config" domainObjectName="TbMeetConfigDO"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true"
+               enableSelectByPrimaryKey="true"
+               enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true">
+            <property name="useActualColumnNames" value="false"/>
+        </table>
+
+        <table tableName="tb_send_message" domainObjectName="TbSendMessageDO"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true"
+               enableSelectByPrimaryKey="true"
+               enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true">
+            <property name="useActualColumnNames" value="false"/>
+        </table>-->
+
+        <!--<table tableName="tbl_insu_bbr" domainObjectName="Test"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true"
+               enableSelectByPrimaryKey="true"
+               enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true">
+            <property name="useActualColumnNames" value="true"/>
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>&lt;!&ndash;若不识别主键，则用此指定主键&ndash;&gt;
+        </table>-->
+
+        <!-- 要生成的表 tableName是数据库中的表名或视图名 domainObjectName是实体类名-->
+        <!--<table tableName="test_demo" domainObjectName="TestDemo"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true"
+               enableSelectByPrimaryKey="true"
+               enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true">
+            &lt;!&ndash;<property name="useActualColumnNames" value="true"/>
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>&ndash;&gt;&lt;!&ndash;若不识别主键，则用此指定主键&ndash;&gt;
+        </table>-->
+        <!--续期信息表-->
+        <!--<table tableName="egp_sn_renew_info" domainObjectName="EgpSnRenewInfo"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true"
+               enableSelectByPrimaryKey="true"
+               enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true">
+        </table>
+        &lt;!&ndash;调度表&ndash;&gt;
+        <table tableName="egp_sn_schedul_dtl" domainObjectName="EgpSnSchedulDtl"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true"
+               enableSelectByPrimaryKey="true"
+               enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true">
+        </table>
+        &lt;!&ndash;回访信息表&ndash;&gt;
+        <table tableName="egp_sn_visit_info" domainObjectName="EgpSnVisitInfo"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true"
+               enableSelectByPrimaryKey="true"
+               enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true">
+        </table>-->
+        <!--投保人表-->
+        <!--<table tableName="egp_sn_bill_zbbr" domainObjectName="EgpSnBillZbbr"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true"
+               enableSelectByPrimaryKey="true"
+               enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true">
+        </table>-->
+        <!--被保人表-->
+       <!-- <table tableName="egp_sn_bill_bbr" domainObjectName="EgpSnBillBbr"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true"
+               enableSelectByPrimaryKey="true"
+               enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true">
+        </table>-->
+        <!--调度表-->
+        <!--<table tableName="egp_sn_apply_dtl" domainObjectName="EgpSnApplyDtl"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true"
+               enableSelectByPrimaryKey="true"
+               enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true">
+        </table>-->
+        <!--产品费率定义表-->
+        <!--<table tableName="gp_prd_prem_rate" domainObjectName="GpPrdPremRate"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true"
+               enableSelectByPrimaryKey="true"
+               enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true">
+        </table>-->
+        <!--核保规则表-->
+        <!--<table tableName="gp_agc_sn_calc_check" domainObjectName="GpAgcSnCalcCheck"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true"
+               enableSelectByPrimaryKey="true"
+               enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true">
+        </table>-->
+        <!--产品配置表-->
+       <!-- <table tableName="egp_product_config" domainObjectName="EgpProductConfig"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true"
+               enableSelectByPrimaryKey="true"
+               enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true">
+        </table>-->
+        <!--健康告知表-->
+        <!--<table tableName="egp_sn_bill_notice" domainObjectName="EgpSnBillNotice"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true"
+               enableSelectByPrimaryKey="true"
+               enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true">
+        </table>-->
+        <!--机构信息表-->
+        <!--<table tableName="egp_agc_agency" domainObjectName="EgpAgcAgency"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true"
+               enableSelectByPrimaryKey="true"
+               enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true">
+        </table>-->
+        <!--保单额外信息表-->
+        <!--<table tableName="egp_sn_pol_info" domainObjectName="EgpSnPolInfo"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true"
+               enableSelectByPrimaryKey="true"
+               enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true">
+        </table>-->
+        <!--<table tableName="egp_sn_pol_info" domainObjectName="EgpSnPolInfo"
+                       enableCountByExample="true"
+                       enableUpdateByExample="true"
+                       enableDeleteByExample="true"
+                       enableSelectByExample="true"
+                       selectByExampleQueryId="true"
+                       enableSelectByPrimaryKey="true"
+                       enableUpdateByPrimaryKey="true"
+                       enableDeleteByPrimaryKey="true">
+                </table>-->
+        <!--批量导核心表-->
+       <!-- <table tableName="egp_mm_trans_dtl" domainObjectName="EgpMmTransDtl"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true"
+               enableSelectByPrimaryKey="true"
+               enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true">
+        </table>-->
+        <!--规则配置表（智能防护）-->
+        <!--<table tableName="dfr_rule" domainObjectName="DfrRuleDO"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true"
+               enableSelectByPrimaryKey="true"
+               enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true">
+        </table>-->
+        <!--年金信息表-->
+        <!--<table tableName="tbl_annuity_info" domainObjectName="TblAnnuityInfoDO"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true"
+               enableSelectByPrimaryKey="true"
+               enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true">
+        </table>-->
+        <!--学生表-->
+        <table tableName="student" domainObjectName="StudentDO"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true"
+               enableSelectByPrimaryKey="true"
+               enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true">
+        </table>
+
+    </context>
+    <!--自动生成底层时注意：数据库分库的话有几个库便会在mapper.xml中生成几个重复的sql，
+        处理方法：删除重复的即可；注意：重新生成mapper.xml,model模型,example,mapper时
+        其中mapper.xml会在生成的文件中追加，而非直接覆盖以前旧的mapper.xml文件，而其他文件则是直接覆盖-->
+</generatorConfiguration>
