@@ -8,10 +8,18 @@
     <classPathEntry  location="E:/workSpace/test/micro-service/testdemo/src/main/resources/generator/mysql-connector-java-8.0.22/mysql-connector-java-8.0.22.jar"/>
 
     <context id="DB2Tables"  targetRuntime="MyBatis3">
-        <commentGenerator>
+        <!--<commentGenerator>
             <property name="suppressDate" value="true"/>
-            <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
+            &lt;!&ndash; 是否去除自动生成的注释 true：是 ： false:否 &ndash;&gt;
             <property name="suppressAllComments" value="true"/>
+        </commentGenerator>-->
+        <commentGenerator>
+            <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
+            <property name="suppressAllComments" value="false"/>
+            <!-- 不希望生成的注释中包含时间戳 -->
+            <property name="suppressDate" value="true"/>
+            <!-- 是否添加数据表中字段的注释 true：是 ： false:否 -->
+            <property name="addRemarkComments" value="true"/>
         </commentGenerator>
         <!--数据库链接URL，用户名、密码
            1.一般jdbc数据库的版本6.x以上，都是com.mysql.cj.jdbc.Driver

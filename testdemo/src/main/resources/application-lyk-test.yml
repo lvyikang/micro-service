@@ -1,0 +1,53 @@
+server:
+  port: 1001
+spring:
+  redis:
+    database:
+    host:
+    password:
+    port:
+    timeout:
+    lettuce:
+      pool:
+        max-active:
+        max-idle:
+        max-wait:
+        min-idle:
+  #数据源连接(阿里云服务器)
+  datasource:
+    username: root
+    password: lyktest123
+    url: jdbc:mysql://47.103.215.40:3306/lykdemo?useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  # 指定为生产环境
+  profiles: lyk-test
+knife4j:
+  # 开启增强配置（要使用Knife4j提供的增强，knife4j.enable=true必须开启，比如为false时下面登陆需要用户名密码的就不起作用了）
+  enable: true
+  # 是否开启生产环境保护策略(控制在线接口文档是否开启)
+  production: false
+  basic:
+    #开启knife4j在线接口文档权限访问（文档登陆用户名/密码）
+    enable: true
+    username: test
+    password: 123456
+
+#mybatis包扫描策略
+mybatis:
+  #数据库底层模型扫描策略
+  type-aliases-package: com.lyk.demo.dataDo
+  mapper-locations: classpath*:/mapperXml/**/*.xml
+  configuration:
+    #在映射实体或者属性时，将数据库中表名和字段名中的下划线去掉，按照驼峰命名法映射（mybatis中默认是false的）
+    map-underscore-to-camel-case: true
+mapper:
+  identity: mysql
+
+# 记录日志
+
+logging:
+  config: classpath:logback-spring.xml
+  level:
+    com.lyk.demo.mapper: debug
+    org.springframework.boot.autoconfigure.logging: info

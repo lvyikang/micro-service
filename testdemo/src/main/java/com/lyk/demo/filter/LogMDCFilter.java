@@ -17,13 +17,13 @@ public class LogMDCFilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain)
             throws IOException, ServletException {
-        MDC.put(UNIQUE_ID_NAME, UUID.randomUUID().toString().replace("-", "").substring(0, 12));
-        try {
-            log.info("进过滤器====:{}", this.getClass().getName());
-            filterChain.doFilter(servletRequest, servletResponse);
-        } finally {
-            log.info("出过滤器====:{}", this.getClass().getName());
-            MDC.remove(UNIQUE_ID_NAME);
-        }
+//        MDC.put(UNIQUE_ID_NAME, UUID.randomUUID().toString().replace("-", "").substring(0, 12));
+//        try {
+//            log.info("进过滤器====:{}", this.getClass().getName());
+//            filterChain.doFilter(servletRequest, servletResponse);
+//        } finally {
+//            log.info("出过滤器====:{}", this.getClass().getName());
+//            MDC.remove(UNIQUE_ID_NAME);
+//        }
     }
 }

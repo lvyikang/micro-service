@@ -12,3 +12,9 @@ CREATE TABLE `student` (
     PRIMARY KEY (`id`)
 ) ENGINE = INNODB AUTO_INCREMENT = 1 DEFAULT CHARSET = utf8mb4 DEFAULT COLLATE = utf8mb4_0900_ai_ci COMMENT='学生表';
 SELECT * FROM student;
+
+
+INSERT INTO `student` (`id`, `name`, `classes`, `gender`, `age`, `school`, `create_time`, `update_time`) VALUES('1','李四','九年一班','F','15','全国第一中学','2022-12-16 15:36:36','2022-12-16 15:36:36');
+INSERT INTO `student` (`id`, `name`, `classes`, `gender`, `age`, `school`, `create_time`, `update_time`) VALUES('2','张三','九年二班','M','16','全国第一中学','2022-12-16 15:37:30','2022-12-16 15:37:33');
+INSERT INTO `student` (`id`, `name`, `classes`, `gender`, `age`, `school`, `create_time`, `update_time`) VALUES('3','哈哈','九年二班','M','16','全国第一中学','2022-12-16 15:39:41','2022-12-16 15:39:44');
+SELECT * FROM student;
